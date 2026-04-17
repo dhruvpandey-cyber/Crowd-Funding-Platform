@@ -1,0 +1,56 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}CrowdSpark | Fund Big Ideas{% endblock %}
+{% block page_id %}home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <p class="eyebrow">COLLEGE MAJOR PROJECT</p>
+    <h1>Build, launch, and fund the next bold idea.</h1>
+    <p class="hero-copy">
+        CrowdSpark is a full crowdfunding platform where creators launch campaigns and backers fuel innovation with secure pledges.
+    </p>
+    <div class="hero-actions">
+        <a class="btn btn-primary" href="/campaigns/">Explore Campaigns</a>
+        <a class="btn btn-ghost" href="/create/">Launch Yours</a>
+    </div>
+
+    <div class="hero-metrics">
+        <div class="metric-pill">
+            <p>Secure Pledges</p>
+            <h3>Sandbox Checkout</h3>
+        </div>
+        <div class="metric-pill">
+            <p>Creator Control</p>
+            <h3>Live Status Switch</h3>
+        </div>
+        <div class="metric-pill">
+            <p>Moderation</p>
+            <h3>Admin Review Flow</h3>
+        </div>
+    </div>
+</section>
+
+<section class="grid-3">
+    <article class="card">
+        <h3>Create Campaign</h3>
+        <p>Define your goal, story, and rewards in minutes.</p>
+    </article>
+    <article class="card">
+        <h3>Get Backers</h3>
+        <p>Share with your network and track momentum live.</p>
+    </article>
+    <article class="card">
+        <h3>Manage Funds</h3>
+        <p>Handle pledges, payouts, and updates from one dashboard.</p>
+    </article>
+</section>
+
+<section class="ticker">
+    <p>Fast creator onboarding</p>
+    <p>Role-based dashboards</p>
+    <p>Sandbox payments</p>
+    <p>Live campaign analytics</p>
+    <p>Moderation-ready admin panel</p>
+</section>
+{% endblock %}

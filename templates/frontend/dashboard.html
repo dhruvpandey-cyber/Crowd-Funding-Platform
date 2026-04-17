@@ -1,0 +1,63 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}CrowdSpark | Dashboard{% endblock %}
+{% block page_id %}dashboard{% endblock %}
+
+{% block content %}
+<section class="section-head">
+    <h1>Your Dashboard</h1>
+    <p>Track your account, pledges, creator campaigns, and live stats.</p>
+</section>
+
+<section class="grid-4">
+    <article class="card metric-card">
+        <p>Campaigns</p>
+        <h3 id="metric-campaign-count">-</h3>
+    </article>
+    <article class="card metric-card">
+        <p>Received Amount</p>
+        <h3 id="metric-received">-</h3>
+    </article>
+    <article class="card metric-card">
+        <p>Total Pledges</p>
+        <h3 id="metric-pledges">-</h3>
+    </article>
+    <article class="card metric-card">
+        <p>Active Campaigns</p>
+        <h3 id="metric-active-campaigns">-</h3>
+    </article>
+</section>
+
+<section class="grid-3">
+    <article class="card">
+        <h3>Profile</h3>
+        <div id="profile-box">Loading...</div>
+    </article>
+    <article class="card">
+        <h3>Your Pledges</h3>
+        <div id="pledges-box">Loading...</div>
+    </article>
+    <article class="card">
+        <h3>Notifications</h3>
+        <div id="notifications-box">Loading...</div>
+    </article>
+</section>
+
+<section class="grid-2">
+    <article class="card">
+        <h3>Creator Campaign Controls</h3>
+        <div id="creator-campaigns-box">Login as creator to manage campaign status.</div>
+    </article>
+    <article class="card">
+        <h3>Funding Snapshot</h3>
+        <div id="chart-box">Loading chart...</div>
+    </article>
+</section>
+
+<section class="grid-1">
+    <article class="card">
+        <h3>Incoming Contributions</h3>
+        <div id="incoming-box">Loading incoming contributions...</div>
+    </article>
+</section>
+{% endblock %}

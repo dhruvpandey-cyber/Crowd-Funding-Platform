@@ -1,0 +1,30 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}CrowdSpark | Campaigns{% endblock %}
+{% block page_id %}campaigns{% endblock %}
+
+{% block content %}
+<section class="section-head">
+    <h1>Discover Campaigns</h1>
+    <p>Support ideas that deserve to exist.</p>
+</section>
+
+<section class="toolbar card">
+    <div class="toolbar-item">
+        <label for="campaign-search">Search</label>
+        <input id="campaign-search" type="text" placeholder="Search by title or story" />
+    </div>
+    <div class="toolbar-item">
+        <label for="campaign-status">Status</label>
+        <select id="campaign-status">
+            <option value="ALL">All</option>
+            <option value="ACTIVE">Active</option>
+            <option value="DRAFT">Draft</option>
+            <option value="PENDING_REVIEW">Pending Review</option>
+            <option value="CANCELLED">Cancelled</option>
+        </select>
+    </div>
+</section>
+
+<div id="campaign-grid" class="grid-3"></div>
+{% endblock %}

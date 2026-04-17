@@ -1,0 +1,31 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}CrowdSpark | Admin Moderation{% endblock %}
+{% block page_id %}admin-panel{% endblock %}
+
+{% block content %}
+<section class="section-head">
+    <h1>Admin Moderation Panel</h1>
+    <p>Review and resolve campaign abuse reports.</p>
+</section>
+
+<section class="detail-layout">
+    <article class="card">
+        <h3>Reports</h3>
+        <div id="admin-reports-box">Loading reports...</div>
+    </article>
+
+    <article class="card sticky-card">
+        <h3>Moderation Checklist</h3>
+        <ul class="feature-list">
+            <li>Verify reported campaign details and evidence</li>
+            <li>Move status from OPEN to UNDER_REVIEW</li>
+            <li>Resolve only after clear conclusion</li>
+            <li>Reject spam/invalid reports with reason</li>
+            <li>Maintain consistent moderation standards</li>
+        </ul>
+    </article>
+</section>
+
+<div id="admin-message" class="flash"></div>
+{% endblock %}

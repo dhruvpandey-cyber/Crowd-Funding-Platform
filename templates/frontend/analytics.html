@@ -1,0 +1,35 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}CrowdSpark | Analytics{% endblock %}
+{% block page_id %}analytics{% endblock %}
+
+{% block content %}
+<section class="section-head">
+    <h1>Platform Analytics</h1>
+    <p>Real-time campaign and pledge metrics for project evaluation.</p>
+</section>
+
+<section class="ticker">
+    <p>Campaign velocity tracking</p>
+    <p>Pledge status distribution</p>
+    <p>Creator performance monitoring</p>
+    <p>Data-driven decision support</p>
+</section>
+
+<section class="grid-2">
+    <article class="card">
+        <h3>Campaign Goals vs Raised</h3>
+        <canvas id="goals-chart" height="220"></canvas>
+    </article>
+    <article class="card">
+        <h3>Pledge Status Distribution</h3>
+        <canvas id="pledge-status-chart" height="220"></canvas>
+    </article>
+</section>
+
+<section class="grid-3">
+    <article class="card metric-card"><h3>Total Campaigns</h3><p id="metric-campaigns">-</p></article>
+    <article class="card metric-card"><h3>Total Pledges</h3><p id="metric-pledges">-</p></article>
+    <article class="card metric-card"><h3>Total Raised</h3><p id="metric-raised">-</p></article>
+</section>
+{% endblock %}

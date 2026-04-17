@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}CrowdSpark{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/site.css?v=20260314-ux3" />
+</head>
+<body data-page="{% block page_id %}base{% endblock %}">
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="grain"></div>
+    <header class="main-header">
+        <a class="brand" href="/">
+            <span class="brand-dot"></span>
+            CrowdSpark
+        </a>
+        <nav class="nav-links">
+            <a href="/campaigns/">Campaigns</a>
+            <a href="/create/">Start Campaign</a>
+            <a href="/dashboard/">Dashboard</a>
+            <a href="/analytics/">Analytics</a>
+            <a href="/admin-panel/">Admin Panel</a>
+            <a href="/auth/" id="auth-link">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/app.js?v=20260314-ux3"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{% extends "frontend/base.html" %}
+
+{% block title %}CrowdSpark | Login & Register{% endblock %}
+{% block page_id %}auth{% endblock %}
+
+{% block content %}
+<section class="section-head">
+    <h1>Welcome to CrowdSpark</h1>
+    <p>Sign in to back campaigns, or register as a creator to launch your own.</p>
+</section>
+
+<section class="auth-layout">
+    <article class="card auth-side">
+        <h2>Why creators choose CrowdSpark</h2>
+        <ul class="feature-list">
+            <li>Structured campaign launch flow</li>
+            <li>Reward tiers and donor tracking</li>
+            <li>Dashboard with incoming contribution insights</li>
+            <li>Moderation-safe project governance</li>
+        </ul>
+    </article>
+
+    <article class="card auth-card">
+        <h2>Login</h2>
+        <form id="login-form" class="stack">
+            <input type="text" name="username" placeholder="Username" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+    </article>
+
+    <article class="card auth-card">
+        <h2>Register</h2>
+        <form id="register-form" class="stack">
+            <input type="text" name="username" placeholder="Username" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="first_name" placeholder="First name" />
+            <input type="text" name="last_name" placeholder="Last name" />
+            <select name="role">
+                <option value="BACKER">Backer</option>
+                <option value="CREATOR">Creator</option>
+            </select>
+            <input type="text" name="phone_number" placeholder="Phone" />
+            <input type="password" name="password" placeholder="Password" required />
+            <button class="btn btn-primary" type="submit">Create account</button>
+        </form>
+    </article>
+</section>
+<div id="auth-message" class="flash"></div>
+{% endblock %}
