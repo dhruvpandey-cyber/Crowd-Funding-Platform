@@ -1,4 +1,4 @@
-# Crowd-Funding Platform (Django + SQL)
+# Crowd-Funding Platform (Django + SQLITE)
 
 Production-style crowdfunding platform (backend + frontend) for a college major project.
 
